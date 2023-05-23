@@ -11,7 +11,7 @@ def load_data():
 
 @app.route('/')
 def index():
-    return render_template('graph1.html')
+    return render_template('eda1.html')
     
 @app.route('/graph/1')
 def graph1():
