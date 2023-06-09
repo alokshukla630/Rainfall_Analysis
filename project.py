@@ -23,7 +23,7 @@ def load_data():
 def index():
     return render_template('home.html')
     
-@app.route('/yearly')
+@app.route('/graphs')
 def graph1():
     rain=  load_data()
     grouped_obj = rain.groupby(["YEAR"]).sum()
